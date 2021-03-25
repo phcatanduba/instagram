@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="insta-icon.png"/>
+</head>
+<body>
+    <header>
+        <div class="itens">
+            <div class="logos">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <div class="border-vertical"></div>
+                <img src="images/logo.png" alt="instagram">
+            </div>
+            <input type="text" placeholder="Pesquisar">
+            <div class="menu-icons">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <ion-icon name="compass-outline"></ion-icon>
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="person-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <header class="mobile">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <img src="images/logo.png" alt="instagram">
+        <ion-icon name="paper-plane-outline"></ion-icon>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="stories">
+                <ul>
+                    <li>
+                        <button class="button-image">
+                            <img src="images/icons/sw.png" alt="">
+                        </button>
+                        <button class="button-name">starwars</button>
+                    </li>
+                    <li>
+                        <button class="button-image">
+                            <img src="images/icons/naruto.jpg" alt="">
+                        </button>
+                        <button class="button-name">naruto</button>
+                    </li>
+                    <li>
+                        <button class="button-image">
+                            <img src="images/icons/goku3.jpg" alt="">
+                        </button>
+                        <button class="button-name">goku</button>
+                    </li>
+                    <li>
+                        <button class="button-image">
+                            <img src="images/icons/magnus-carlsen.jpg" alt="">
+                        </button>
+                        <button class="button-name">magnus carlsen</button>
+                    </li>
+                    <li>
+                        <button class="button-image">
+                            <img src="images/icons/billgates.jpg" alt="">
+                        </button>
+                        <button class="button-name">bill gates</button>
+                    </li>
+                    <li>
+                        <button class="button-image">
+                            <img src="images/icons/sasuke.jpg" alt="">
+                        </button>
+                        <button class="button-name">sasuke</button>
+                    </li>
+                    <li>
+                        <button class="button-image">
+                            <img src="images/icons/itachi.jpg" alt="">
+                        </button>
+                        <button class="button-name">itachi</button>
+                    </li>
+                    <li class="teste">
+                        <button class="button-image" class="teste">
+                            <img src="images/icons/messi.png" alt="">
+                        </button>
+                        <button class="button-name">messi</button>
+                    </li>
+                </ul>
+                <div class="forward">
+                    <ion-icon onclick="myFunction()" id="passar" name="chevron-forward-circle" style="color: white"></ion-icon>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="post">
+                    <div class="post-info">
+                        <div>
+                            <button><img src="images/icons/darth_vader_icon.jpg" alt=""></button>
+                            <button class="button-name">darth vader</button>
+                        </div>
+                        <button class="settings"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button>
+                    </div>
+                    <img src="images/darth_vader.jpg">
+                    <div class="options">
+                        <div class="like-comment-send">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                        </div>
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </div>
+                    <div class="public">
+                        <div class="likes">
+                            <img class="liked" src="images/icons/anitta.jpg">
+                            <div>Curtido por <a class="fake-link" href="#">anitta</a> e outras <a class="fake-link" href="#">420.069</a> pessoas</div>
+                        </div>
+                        <div class="description">
+                            <button class="button-name"><strong>darth vader</strong></button>
+                            posturado.
+                            <a href="#"><p>Ver todos os 42 comentários</p></a>
+                        </div>
+                        <div class="commented">
+                            <div>
+                                <button class="button-name"><strong>neymarjr</strong></button>
+                                brabo
+                            </div>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="commented">
+                            <div>
+                                <button class="button-name"><strong>anitta</strong></button>
+                                lindooooo
+                            </div>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="publish">
+                            <p>HÁ 42 DIAS</p>
+                            <div>
+                                <ion-icon name="happy-outline"></ion-icon>
+                                <input type="text" name="publish-comment" id="publish-comment" placeholder="Adicione um comentário...">
+                                <button class="publish-button">Publicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-info">
+                        <div>
+                            <button><img src="images/icons/urso.jpg" alt=""></button>
+                            <button class="button-name">urso</button>
+                        </div>
+                        <button class="settings"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button>
+                    </div>
+                    <video autoplay muted loop>
+                        <source src="./videos/video.mp4" type="video/mp4">
+                        <source src="./videos/video.ogv" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="options">
+                        <div class="like-comment-send">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                        </div>
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </div>
+                    <div class="public">
+                        <div class="likes">
+                            <img class="liked" src="images/icons/anitta.jpg"> 
+                            <div>
+                                Curtido por <a class="fake-link" href="#">anitta</a> e outras <a class="fake-link" href="#">420.069</a> pessoas
+                            </div>
+                        </div>
+                        <div class="description">
+                            <button class="button-name"><strong>urso</strong></button>
+                            posturado.
+                            <a href="#"><p>Ver todos os 42 comentários</p></a>
+                        </div>
+                        <div class="commented">
+                            <div>
+                                <button class="button-name"><strong>neymarjr</strong></button>
+                                brabo
+                            </div>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="commented">
+                            <div>
+                                <button class="button-name"><strong>anitta</strong></button>
+                                lindooooo
+                            </div>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="publish">
+                            <p>HÁ 42 DIAS</p>
+                            <div>
+                                <ion-icon name="happy-outline"></ion-icon>
+                                <input type="text" name="publish-comment" id="publish-comment" placeholder="Adicione um comentário...">
+                                <button class="publish-button">Publicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-info">
+                        <div>
+                            <button><img src="images/icons/beth-icon.jpg" alt=""></button>
+                            <button class="button-name">Beth Harmon</button>
+                        </div>
+                        <button class="settings"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></button>
+                    </div>
+                    <img src="images/beth.jpg">
+                    <div class="options">
+                        <div class="like-comment-send">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                        </div>
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </div>
+                    <div class="public">
+                        <div class="likes">
+                            <img class="liked" src="images/icons/anitta.jpg"> 
+                            <div>Curtido por <a class="fake-link" href="#">anitta</a> e outras <a class="fake-link" href="#">420.069</a> pessoas</div>
+                        </div>
+                        <div class="description">
+                            <button class="button-name"><strong>Beth Harmon</strong></button>
+                            posturada.
+                            <a href="#"><p>Ver todos os 42 comentários</p></a>
+                        </div>
+                        <div class="commented">
+                            <div>
+                                <button class="button-name"><strong>neymarjr</strong></button>
+                                braba
+                            </div>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="commented">
+                            <div>
+                                <button class="button-name"><strong>anitta</strong></button>
+                                lindaaaaaa
+                            </div>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="publish">
+                            <p>HÁ 42 DIAS</p>
+                            <div>
+                                <ion-icon name="happy-outline"></ion-icon>
+                                <input type="text" name="publish-comment" id="publish-comment" placeholder="Adicione um comentário...">
+                                <button class="publish-button">Publicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div class="user">
+                <img src="./images/icons/obito.png">
+                <div class="user-name">
+                    <a href="#">ph</a>
+                    <div>Pedro Henrique</div>
+                </div>
+            </div>
+            <div class="suggestions">
+                <div class="title-suggestions">
+                    <div>Sugestões para você</div>
+                    <div class="show-all"><a href="#">Ver tudo</a></div>
+                </div>
+                <div class="follow">
+                    <div class="users-suggestions">
+                        <a><img src="./images/icons/elonmusk.jpg"></a>
+                        <div class="info">
+                            <a href="#">Elon Musk</a>
+                            <p>Segue você</p>
+                        </div>
+                    </div>
+                    <div class="follow-back">Seguir</div>
+                </div>
+                <div class="follow">
+                    <div class="users-suggestions">
+                        <a><img src="./images/icons/pedrao.jpg"></a>
+                        <div class="info">
+                            <a href="#">Pedrão</a>
+                            <p>Segue você</p>
+                        </div>
+                    </div>
+                    <div class="follow-back">Seguir</div>
+                </div>
+                <div class="follow">
+                    <div class="users-suggestions">
+                        <a><img src="./images/icons/mrobot.jpg"></a>
+                        <div class="info">
+                            <a href="#">Mr. Robot</a>
+                            <p>Segue você</p>
+                        </div>
+                    </div>
+                    <div class="follow-back">Seguir</div>
+                </div>
+                <div class="follow">
+                    <div class="users-suggestions">
+                        <a><img src="./images/icons/fabio.jpg"></a>
+                        <div class="info">
+                            <a href="#">Fábio Akita</a>
+                            <p>Segue você</p>
+                        </div>
+                    </div>
+                    <div class="follow-back">Seguir</div>
+                </div>
+                <div class="follow">
+                    <div class="users-suggestions">
+                        <a><img src="./images/icons/neymar.jpg"></a>
+                        <div class="info">
+                            <a href="#">neymarjr</a>
+                            <p>Segue você</p>
+                        </div>
+                    </div>
+                    <div class="follow-back">Seguir</div>
+                </div>
+                <div>
+                    <p>
+                        Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
+                        Termos • Localizações • Contas mais relevantes • Hashtags • 
+                        Idioma
+                    </p>
+                    <p class="copyright">
+                        © 2021 INSTAGRAM DO FACEBOOK
+                    </p>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <ion-icon name="home"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="add-circle-outline"></ion-icon>
+        <ion-icon name="heart-outline"></ion-icon>
+        <ion-icon name="person-outline"></ion-icon>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

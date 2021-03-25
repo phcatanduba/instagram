@@ -1,0 +1,449 @@
+body {
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #262626;
+}
+
+header {
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 54px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid #DBDBDB;
+    background-color:  rgba(255, 255, 255);
+}
+
+header .itens {
+    display: flex;
+    width: 935px;
+    justify-content: space-between;
+}
+
+header.mobile {
+    display: none;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.border-vertical {
+    height: 22px;
+    width: 1px;
+    margin: 0 11px;
+    background-color: #DBDBDB;
+}
+
+.menu-icons ion-icon {
+    margin-left: 24px;
+}
+
+ion-icon {
+    font-size: 24px;
+}
+
+header input {
+    height: 28px;
+    width: 215px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 935px;
+    margin: 54px auto;
+}
+
+.content {
+    width: 614px;
+    height: 100%;
+}
+
+.stories {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    margin-top: 34px;
+    margin-bottom: 24px;
+    height: 118px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.forward {
+    position: absolute;
+    top: 1;
+    right: 0;
+}
+
+.forward ion-icons {
+    width: 26px;
+    height: 26px;
+}
+
+ul {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 66px;
+    width: 100%;
+}
+
+li {
+    height: 100%;
+    text-align: center; 
+    width: 108px;
+    margin: 0 -2%;
+}
+
+li:first-child {
+    margin-left: 5px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.button-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 66px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/stories_background.jpg");
+    background-position: center; 
+    background-size: cover;
+    margin-bottom: 3px;
+}
+
+li img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+
+.post {
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 100%;
+    margin-bottom:  60px;
+}
+
+.post-info {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.post-info button.settings {
+    margin-right: 2%;
+}
+
+.post-info img{
+    width: 32px;
+    height: 32px;
+    border-radius: 28px;
+}
+
+.post > img {
+    width: 100%;
+    height: 100%;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.options > ion-icon {
+    margin-right: 18px;
+}
+
+.like-comment-send ion-icon{
+    margin-left: 18px;
+}
+
+img.liked {
+    width: 20px;
+    height: 20px;
+    border-radius: 28px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    margin-left: 18px;
+}
+
+.likes div {
+    width: 100%;
+}
+
+.fake-link {
+    font-weight: bold;
+}
+
+.description {
+    margin: 2px 2%;
+}
+
+.description p {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.commented {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2%;
+}
+
+.commented ion-icon {
+    font-size: 16px;
+} 
+
+.publish p {
+    font-size: 10px;
+    margin: 5px 18px;
+}
+
+.publish div {
+    border-top: 1px solid #DBDBDB;
+    display: flex;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.publish ion-icon {
+    margin: 0 2%;
+    font-size: 24px;
+}
+
+.publish input {
+    border: none;
+    outline: none;
+    width: 70%;
+}
+
+.publish-button {
+    margin-left: 10%;
+    color: #B2DFFC;
+    transition: 300;
+}
+
+.publish-button:hover {
+    color: #0095F6;
+    transition: color 300ms;
+}
+
+aside {
+    position: fixed;
+    width: 293px;
+    height: 430px;
+    margin-top: 90px;
+    right: calc(50% - 467.5px);
+    top: 0;
+}
+
+.user img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.user-name {
+    margin-left: 17px;
+    line-height: 16px;
+}
+
+.title-suggestions{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8E8E8E;
+}
+
+.follow, .title-suggestions {
+    margin-bottom: 18px;
+}
+
+div.show-all {
+    margin-left: 120px;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.users-suggestions {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    margin-left: 11px;
+}
+
+.follow-back {
+    cursor: pointer;
+    color: #139EF2;
+}
+
+.users-suggestions img{
+    width: 32px;
+    height: 32px;
+    border-radius: 28px;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+    font-weight: bold;
+}
+
+p { 
+    font-size: 12px;
+    line-height: 14px;
+    color: #8E8E8E;
+}
+
+p.copyright {
+    margin-top: 18px;
+}
+
+footer {
+    display: none;
+}
+
+ion-icon {
+    cursor: pointer;
+}
+
+@media(max-width: 935px) {
+
+    header .itens {
+        margin: 0 2%;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media(max-width: 614px) {
+
+    header {
+        display: none;
+    }
+
+    header.mobile {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .button-image {
+        border-radius: 28px;
+    }
+
+    .forward {
+        display: none;
+    }
+
+    .mobile img {
+        margin: 0 25%;
+    }
+
+    .container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .stories {
+        background: none;
+        border: none;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .timeline {
+        width: 100%;
+    }
+
+    .post {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 54px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border: 1px solid #DBDBDB;
+        background-color:  rgba(255, 255, 255);
+    }
+    
+}

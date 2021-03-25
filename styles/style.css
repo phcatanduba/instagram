@@ -69,9 +69,13 @@ header input {
     height: 100%;
 }
 
+.stories-box{
+    position: relative;
+    z-index: 5000;
+}
+
 .stories {
     display: flex;
-    position: relative;
     width: 100%;
     align-items: center;
     margin-top: 34px;
@@ -79,25 +83,26 @@ header input {
     height: 118px;
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
-    box-sizing: border-box;
     border-radius: 3px;
     overflow: hidden;
 }
 
-.forward {
+.right {
+    z-index: 50000;
     position: absolute;
-    top: 1;
-    right: 0;
+    bottom: 50px;
+    right: 10px;
 }
 
-.forward ion-icons {
-    width: 26px;
-    height: 26px;
+.left {
+    z-index: 50000;
+    position: absolute;
+    top: 50px;
+    left: 10px;
 }
 
 ul {
     display: flex;
-    flex-shrink: 0;
     flex-direction: column;
     flex-wrap: wrap;
     height: 66px;
@@ -397,7 +402,7 @@ ion-icon {
         border-radius: 28px;
     }
 
-    .forward {
+    .arrow {
         display: none;
     }
 

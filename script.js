@@ -1,6 +1,10 @@
-var seta = document.getElementById("passar");
-var story = document.querySelector("ul");
+var story = document.querySelector(".stories");
 
-function myFunction() {
-    story.style.transform = "transformX(100000000)";
+function right() {
+    story.scrollBy(100, 0);
 }
+
+function left() {
+    story.scrollBy(-100, 0);
+}
+

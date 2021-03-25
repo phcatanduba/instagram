@@ -56,6 +56,9 @@ header input {
     height: 28px;
     width: 215px;
     text-align: center;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
 }
 
 .container {
